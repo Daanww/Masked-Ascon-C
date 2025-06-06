@@ -1,0 +1,15 @@
+Instructions on how to compile and run the tests:
+(assuming debian based machine)
+-clone this project
+-clone ibex-demo-system
+-follow ibex instructions to get the simulation up and running:
+    install the python environment
+    install srecord?
+    try to build the simulator, if you get errors:
+        install the verible binaries (notably: verible-verilog-format) and export them in the python venv
+        try to use older commit of ibex-demo-system
+        install "packaging" using pip
+        install libelf-dev package for "libelf.h"
+-download the riscv32 gcc toolchain as mentioned on the page and add it to your path.
+-maybe use "simulate.sh"
+-if it cannot find the simulator binary check which binary was created by building the simulator (ibex-demo-system/build/lowrisc_ibex_demo_system_0/sim-verilator/)
